@@ -53,7 +53,7 @@ choco install -y resharper --package-parameters="'/NoCpp'"
 executeScript "PersonalProjects.ps1";
 
 #--- Configure Windows environment .gitconfig, PowerShell ---
-# executeScript "ConfigureWindowsEnvironment.ps1";
+executeScript "ConfigureWindowsEnvironment.ps1";
 
 Enable-UAC
 Enable-MicrosoftUpdate
