@@ -28,7 +28,7 @@ executeScript "RemoveDefaultApps.ps1";
 executeScript "CommonDevTools.ps1";
 #--- executeScript "Browsers.ps1";
 executeScript "WindowsTools.ps1";
-executeScript "Innoveo.ps1";
+executeScript "WorkTools.ps1";
 
 #--- Visual Studio ---
 choco install visualstudio2019professional -y --package-parameters "--add Microsoft.VisualStudio.Component.Git" 

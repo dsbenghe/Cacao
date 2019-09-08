@@ -1,2 +1,6 @@
 #--- Browsers ---
-choco install microsoft-edge-insider-dev
+choco install googlechrome
+choco pin add -n=googlechrome
+
+choco install firefox flashplayerplugin
+choco pin add -n=firefox

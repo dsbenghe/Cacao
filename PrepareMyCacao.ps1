@@ -46,14 +46,14 @@ choco install -y visualstudio2019-workload-azure
 choco install -y visualstudio2019-workload-visualstudioextension 
 
 #--- Visual Studio extensions ---
-choco install -y gitdiffmargin
-choco install -y resharper-ultimate-all --package-parameters="'/NoCpp'"
+# choco install -y gitdiffmargin
+choco install -y resharper --package-parameters="'/NoCpp'"
 
 #--- Get personal projects ---
 executeScript "PersonalProjects.ps1";
 
 #--- Configure Windows environment .gitconfig, PowerShell ---
-executeScript "ConfigureWindowsEnvironment.ps1";
+# executeScript "ConfigureWindowsEnvironment.ps1";
 
 Enable-UAC
 Enable-MicrosoftUpdate
