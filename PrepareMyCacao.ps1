@@ -48,6 +48,7 @@ choco install -y visualstudio2019-workload-visualstudioextension
 #--- Visual Studio extensions ---
 # choco install -y gitdiffmargin
 choco install -y resharper --package-parameters="'/NoCpp'"
+choco install -y jetbrains-rider
 
 #--- Get personal projects ---
 executeScript "PersonalProjects.ps1";
