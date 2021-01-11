@@ -26,19 +26,27 @@ executeScript "SystemConfiguration.ps1";
 executeScript "FileExplorerSettings.ps1";
 executeScript "RemoveDefaultApps.ps1";
 executeScript "CommonDevTools.ps1";
-#--- executeScript "Browsers.ps1";
+executeScript "Browsers.ps1";
 executeScript "WindowsTools.ps1";
 executeScript "WorkTools.ps1";
 
-#--- Visual Studio ---
-choco install visualstudio2019professional -y --package-parameters "--add Microsoft.VisualStudio.Component.Git" 
-Update-SessionEnvironment #refreshing env due to Git install
+executeScript "HyperV.ps1";
+RefreshEnv
+executeScript "WSL.ps1";
+RefreshEnv
+executeScript "Docker.ps1";
+executeScript "AzureDevops.ps1";
 
-choco install -y visualstudio2019-workload-manageddesktop
+# #--- Visual Studio ---
+# choco install visualstudio2019professional -y --package-parameters "--add Microsoft.VisualStudio.Component.Git" 
+# Update-SessionEnvironment #refreshing env due to Git install
+
+# choco install -y visualstudio2019-workload-manageddesktop
 
 #--- Visual Studio extensions ---
-choco install -y gitdiffmargin
+# choco install -y gitdiffmargin
 choco install -y resharper-ultimate-all --package-parameters="'/NoCpp'"
+choco install -y jetbrains-rider
 
 Enable-UAC
 Enable-MicrosoftUpdate

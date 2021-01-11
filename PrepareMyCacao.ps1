@@ -37,7 +37,7 @@ executeScript "Docker.ps1";
 executeScript "AzureDevops.ps1";
 
 #--- Visual Studio ---
-choco install visualstudio2019professional -y --package-parameters "--add Microsoft.VisualStudio.Component.Git" 
+choco install visualstudio2019enterprise -y --package-parameters "--add Microsoft.VisualStudio.Component.Git" 
 Update-SessionEnvironment #refreshing env due to Git install
 
 choco install -y visualstudio2019-workload-manageddesktop
