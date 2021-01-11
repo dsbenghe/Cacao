@@ -21,6 +21,6 @@ choco install -y winscp
 # choco install -y rapidee
 # choco install -y snoop
 
-choco install -y jdk8 jre8
+choco install -y jdk8
 
 Install-Module -Force oh-my-posh
