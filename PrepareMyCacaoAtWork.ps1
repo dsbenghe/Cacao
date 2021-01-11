@@ -35,8 +35,8 @@ RefreshEnv
 executeScript "Docker.ps1";
 executeScript "AzureDevops.ps1";
 executeScript "dotnet.ps1";
-executeScript "WSL.ps1";
-RefreshEnv
+# executeScript "WSL.ps1";
+# RefreshEnv
 
 # #--- Visual Studio ---
 # choco install visualstudio2019professional -y --package-parameters "--add Microsoft.VisualStudio.Component.Git" 
