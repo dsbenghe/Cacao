@@ -2,6 +2,8 @@
 # Author: Laurent Kempé
 # Dev settings for my app development
 
+$Boxstarter.RebootOk=$true
+
 Disable-UAC
 
 # Get the base URI path from the ScriptToCall value
