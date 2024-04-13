@@ -32,21 +32,21 @@ executeScript "WorkTools.ps1";
 
 executeScript "HyperV.ps1";
 RefreshEnv
+executeScript "WSL.ps1";
+RefreshEnv
 executeScript "Docker.ps1";
 executeScript "AzureDevops.ps1";
-executeScript "dotnet.ps1";
-# executeScript "WSL.ps1";
-# RefreshEnv
 
-# #--- Visual Studio ---
-# choco install visualstudio2019professional -y --package-parameters "--add Microsoft.VisualStudio.Component.Git" 
-# Update-SessionEnvironment #refreshing env due to Git install
+#--- Visual Studio ---
+choco install -y visualstudio2022enterprise
+choco install -y visualstudio2022-workload-manageddesktop
+choco install -y visualstudio2022-workload-python
+choco install -y visualstudio2022-workload-netweb
+choco install -y visualstudio2022-workload-azure 
+choco install -y visualstudio2022-workload-visualstudioextension 
+choco install -y visualstudio2022-workload-data
 
-# choco install -y visualstudio2019-workload-manageddesktop
-
-#--- Visual Studio extensions ---
-# choco install -y gitdiffmargin
-choco install -y resharper-ultimate-all --package-parameters="'/NoCpp'"
+choco install -y resharper-ultimate-all
 choco install -y jetbrains-rider
 
 Enable-UAC

@@ -1,4 +1,3 @@
-#--- Browsers ---
 choco install googlechrome
 choco pin add -n=googlechrome
 
